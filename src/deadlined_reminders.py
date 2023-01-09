@@ -35,6 +35,7 @@ class DateReminder(DeadlinedReminder): # inherits from DeadlinedReminder
         self.date = parse(date, dayfirst=True)  # parse function stores date parameter on to self.
         self.text = text 
 
+
     def is_due(self):
         return self.date <= datetime.now()
 
