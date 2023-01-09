@@ -1,6 +1,6 @@
 from src.database import add_reminder, list_reminders
-from src.external_reminders import EveningReminder #replace it with Datereminder in add reminder and it will break the code
 from src.reminder import PoliteReminder
+from src.external_reminders import EveningReminder #replace it with Datereminder in add reminder and it will break the code
 from src.deadlined_reminders import DateReminder, DeadlinedReminder
 
 DeadlinedReminder.register(PoliteReminder)

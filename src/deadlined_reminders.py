@@ -34,12 +34,6 @@ class DateReminder(DeadlinedReminder): # inherits from DeadlinedReminder
     def __init__(self, text, date): ## init takes these parameters 
         self.date = parse(date, dayfirst=True)  # parse function stores date parameter on to self.
         self.text = text 
-   
-    # def __str__(self):
-       # return f"{self.text} ({self.date})"
-
-    # reminder = DateReminder("Take out the trash", "2022-01-08") # customises the way that the object is printed
-    # print(reminder)  # Output: Take out the trash (2022-01-08)   
 
     def is_due(self):
         return self.date <= datetime.now()
