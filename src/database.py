@@ -1,5 +1,5 @@
 import csv
-from src.deadlined_reminders import DeadlinedReminder # save these reminders into the database
+from src. deadlined_reminders import DeadlinedReminder # save these reminders into the database
 
 def list_reminders():
     f = open("reminders.csv", "r")
