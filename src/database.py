@@ -14,7 +14,7 @@ def list_reminders():
         print()
 
 def add_reminder(text, date, ReminderClass):
-    reminder = ReminderClass(text, date) # giving it a second parameter (date) and changing how we construct the reminder variable by making it a datereminder object instead of politereminder
+    reminder = ReminderClass(text, date) # changing how we construct the reminder variable by making it a datereminder object instead of politereminder
     if not isinstance(reminder, DeadlinedReminder):
         raise TypeError('Invalid Reminder Class')
 
